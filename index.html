@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skeppy's Website :P</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: purple;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 12px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HELLO WORLD :P</h1>
+
+    <p>Welcome to Skeppy's website!</p>
+
+    <button onclick="alert('HELLO XDDDD')">
+        CLICK ME!
+    </button>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Chaos</title>
+  <style>
+    body {
+      background: #101020;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    button {
+      padding: 15px 25px;
+      background: cyan;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 RANDOM CHAOS</h1>
+  <p id="result">Click the button!</p>
+
+  <button onclick="chaos()">GENERATE</button>
+
+  <script>
+    function chaos() {
+      const things = [
+        "THE MOON HAS ESCAPED 🌙",
+        "A WILD POTATO APPEARED 🥔",
+        "404: BRAIN NOT FOUND 💀",
+        "EARTH HAS LEFT THE CHAT 🌍",
+        "COSMIC BANANA DETECTED 🍌",
+        "YOU FOUND NOTHING. CONGRATS."
+      ];
+
+      document.getElementById("result").textContent =
+        things[Math.floor(Math.random() * things.length)];
+    }
+  </script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cosmic Chaos</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #25255c, #050510);
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 45px;
+      text-shadow: 0 0 20px cyan;
+    }
+
+    button {
+      background: cyan;
+      color: black;
+      border: none;
+      padding: 18px 30px;
+      border-radius: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.15);
+      background: magenta;
+    }
+
+    #output {
+      font-size: 25px;
+      margin-top: 35px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌌 COSMIC CHAOS</h1>
+  <p>Press the button to disturb the universe.</p>
+
+  <button onclick="generate()">
+    CREATE CHAOS
+  </button>
+
+  <div id="output">Waiting...</div>
+
+  <script>
+    const chaos = [
+      "🪐 SATURN HAS LEFT ORBIT",
+      "🌍 EARTH IS BUFFERING",
+      "☄️ ASTEROID DETECTED",
+      "👽 ALIEN WIFI CONNECTED",
+      "💀 UNIVERSE.EXE CRASHED",
+      "🌌 GALAXY NOT FOUND",
+      "🧀 THE MOON IS CHEESE"
+    ];
+
+    function generate() {
+      const random = Math.floor(Math.random() * chaos.length);
+      document.getElementById("output").textContent = chaos[random];
+    }
+  </script>
+
+</body>
+</html>
+
